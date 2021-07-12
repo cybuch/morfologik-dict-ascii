@@ -6,20 +6,20 @@ You have to define new token filter of type "morfologik_stem" that will use this
 
 ```
 {
-	"analysis": {
-		"filter": {
-			"morfologik_stem_wo_diacritics": {
-				"type": "morfologik_stem",
-				"dictionary": "polish_wo_diacritics.dict"
-			}
-		},
-		"analyzer": {
-			"polish": {
-				"filter": [
-					"morfologik_stem_wo_diacritics"
-				]
-			}
-		}
-	}
+  "analysis": {
+    "filter": {
+      "morfologik_stem_wo_diacritics": {
+        "type": "morfologik_stem",
+        "dictionary": "polish_wo_diacritics.dict"
+      }
+    },
+    "analyzer": {
+      "polish": {
+        "filter": [
+          "morfologik_stem_wo_diacritics"
+        ]
+      }
+    }
+  }
 }
 ```
